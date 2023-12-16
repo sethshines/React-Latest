@@ -1,3 +1,5 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
 // Created an heading in React
 // createElement(tag, attributes,  children)
 const heading = React.createElement(
@@ -12,7 +14,7 @@ const heading = React.createElement(
       key: "heading-1",
       id: "heading-text",
     },
-    "Hello World"
+    "Hello World! I :3 react."
   ),
   React.createElement(
     "p",

@@ -1,0 +1,33 @@
+{
+  "name": "react-latest",
+  "version": "0.0.1",
+  "description": "this is the learning of react",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sethshines/React-Latest.git"
+  },
+  "keywords": [
+    "react",
+    "parcel"
+  ],
+  "author": "Rahul Seth <sethshines@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sethshines/React-Latest/issues"
+  },
+  "homepage": "https://github.com/sethshines/React-Latest#readme",
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    "last 20 versions"
+  ]
+}
