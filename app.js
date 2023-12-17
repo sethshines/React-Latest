@@ -1,37 +1,32 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-// Created an heading in React
-// createElement(tag, attributes,  children)
-const heading = React.createElement(
-  "h1",
-  {
-    id: "heading",
-  },
-  [//   "Hello World"
-  React.createElement(
-    "p",
-    {
-      key: "heading-1",
-      id: "heading-text",
-    },
-    "Hello World! I :3 react."
-  ),
-  React.createElement(
-    "p",
-    {
-      key: "heading-2",
-      id: "heading-text-2",
-    },
-    "Hello World Again"
-  )]
+
+// const heading = React.createElement("h2", {
+//   id: 'heading-text'
+// }, "Hello Everyone");
+
+// JSX (babel transpiles to React.creatElement  before it reaches js engine)
+const Title = () => (
+  <h1 id="heading-txt" className="head">
+    Hello Everyone!
+  </h1>
 );
 
-console.log(heading); // create a JS OBJECT
-// Created an Root Node in React
-const root1 = ReactDOM.createRoot(document.getElementById("root"));
-const root2 = ReactDOM.createRoot(document.getElementById("root2"));
+const heading = (
+  <h1 id="heading" className="head">
+    Hello Everyone!
+  </h1>
+);
 
-// Render heading in root 1.
-root1.render(heading);
-// Render heading in root 1.
-root2.render(heading);
+const HeadingComponent = () => (
+  <div>
+    {heading}
+    <Title />
+    <h1 id="heading-text" className="head">
+      I am a functional Component
+    </h1>
+  </div>
+);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(<HeadingComponent />);

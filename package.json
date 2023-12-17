@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "description": "this is the learning of react",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
